@@ -101,11 +101,24 @@ python3 make_cover.py
 
 字体会自动探测：鸿蒙 `/system/fonts`、Linux Noto CJK / 文泉驿、macOS PingFang、Windows 微软雅黑。找不到时请安装中文字体，或修改脚本里的 `_FONT_ALTS`。
 
-## 版权与致谢
+## 运行环境（DSHM / DSH）
 
-- 本工具：MIT（见 LICENSE）
-- 依赖：latex2mathml（MIT）、mathml2omml（MIT），纯 Python，随备份包附带许可证
-- 生成的 docx 不嵌入字体，公式由 WPS/Word 的 Cambria Math 渲染
+- **DSHM（鸿蒙端侧）**：主程序放 `$DSH_HOME/tools/`，`SKILL.md` 改名为 `md2docx.md` 放 `$DSH_HOME/skills/`；用 DSHM 的 `python` 工具运行，不要用 bash 里的 `python3` 垫片。
+- **DSH 桌面版 / 普通 Python**：任意目录，`pip install -r requirements.txt`，然后 `python md2docx.py input.md -o output.docx`。
+- 两种环境共用同一份 `md2docx.py`，没有鸿蒙特有依赖。
+
+## 版权、第三方依赖与商标
+
+- **本项目**：MIT，见 [LICENSE](LICENSE)。示例图、示例数据由本项目程序生成，随 MIT 许可发布。
+- **第三方依赖**：`latex2mathml`（MIT）、`mathml2omml`（MIT）、`fontTools`（MIT）；其余仅 Python 标准库（PSF License）。
+- **字体不随包分发**：程序读取系统已安装字体。Noto 系列为 SIL OFL 1.1；DejaVu 系列为 Bitstream Vera 许可；Windows / macOS 商业字体需你在本机自行取得授权，仓库不附带任何字体文件。
+- **商标与归属**：DSH、DSHM、DeepSeek Harness 是其各自所有者的产品名或商标；本项目是独立的第三方开源工具，与官方无隶属、赞助或背书关系。GitHub 为其所有者商标。
+- **代码来源**：本仓库代码为原创实现；如果后续引入第三方代码，会在此列出其来源与许可。
+
+## 致谢
+
+- 公式转换基于 `latex2mathml`（MIT）与 `mathml2omml`（MIT）。
+- 生成的 docx 不嵌入字体，公式由 WPS/Word 的 Cambria Math 渲染。
 
 ## 常见问题
 
