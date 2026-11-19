@@ -7,3 +7,6 @@ out/
 *.bak
 *.pyc
 *.zip
+
+# 本地隐私词表（不进仓库）
+.privacy-words
