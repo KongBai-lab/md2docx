@@ -1,0 +1,9 @@
+# 生成产物
+__pycache__/
+out/
+*.docx
+
+# 备份 / 编译 / 打包
+*.bak
+*.pyc
+*.zip
