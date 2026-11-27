@@ -146,3 +146,7 @@ python pdf2docx/to_docx.py input.pdf -o output.docx --no-images  # 只要文字
 适合「文字可编辑、层级合理」的场景；表格、多栏、页眉页脚不还原，扫描件不识别。
 管线、文件说明与限制见 [pdf2docx/README.md](pdf2docx/README.md)。
 
+## 问题反馈
+
+- 优先在 [Issues](https://github.com/KongBai-lab/md2docx/issues) 提交，便于公开跟踪。
+- 不便公开时（含安全问题），发邮件到 **KongBaiLab@yeah.net**。
